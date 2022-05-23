@@ -6,7 +6,7 @@ Visit at: *ryff3kenu5u7qijckmatsids5ur4h6g335qg3bqq5s55z2db3buhkzad (dot) onion*
 
 The site is static, so this is only the source for tools used to generate it.
 
-This repo isn't really meant for others to use, mostly to keep track of development.
+This repo isn't really meant for others to use, it's mostly to keep track of development.
 
 ## File Structure
 
