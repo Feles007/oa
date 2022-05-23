@@ -1,0 +1,4 @@
+# Greetings, skid!
+User-Agent: *
+Disallow: /files/
+Disallow: /thumbnails/

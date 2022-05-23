@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>The Oppressed Archives</title>
+		<link rel="stylesheet" href="/static/base.css">
+		<link rel="stylesheet" href="/static/all.css">
+		<link rel="icon" href="/favicon.ico">
+		<meta name="referrer" content="no-referrer">
+	</head>
+	<body>
+		<div id="header">
+			<br>
+			<h1>Oppressed Archives</h1>
+			<h2>All Files</h2>
+			<br>
+			<hr>
+			<br>
+			<h3 id="back"><a href="/">Go Back</a></h3>
+			<br>
+			<hr>
+			<br>
+		</div>
+		<div id="main">
+
+			{% for creator in creators %}
+
+				{% for category in creator.categories %}
+
+					{% for addon in category.addons %}
+
+						<a href="/files/{{ creator.name }}/{{ addon }}.zip">{{ creator.name }}/{{ addon }}</a>
+						<br>
+
+					{% endfor %}
+
+				{% endfor %}
+
+			{% endfor %}
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+	</body>
+</html>

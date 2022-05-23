@@ -1,0 +1,18 @@
+.file {
+	width: 224px;
+	display: inline-block;
+	border-style: solid;
+	border-color: #222222;
+	margin: 10px;
+	text-decoration: none;
+}
+.file > img {
+	width: 100%;
+	border-bottom-style: solid;
+	border-bottom-color: #222222;
+}
+.file > p {
+	margin-bottom: 5px;
+	font-family: sans-serif, sans-serif;
+	font-size: 13px;
+}

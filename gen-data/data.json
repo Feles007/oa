@@ -1,0 +1,182 @@
+{
+	"creators": [
+		{
+			"name": "a_social_guarantee",
+			"display_name": "a social guarantee",
+			"categories": [
+				{
+					"title": "District Maps",
+					"addons": [
+						"commercial_district",
+						"downtown_district",
+						"gambling_district",
+						"industrial_district",
+						"residential_district"
+					]
+				},
+				{
+					"title": "Story Maps",
+					"addons": [
+						"blood_e1m4_(dark_carnival)",
+						"derry_troubles",
+						"giza_riot",
+						"grozny_siege",
+						"santorini_hit",
+						"scarfolk_town"
+					]
+				},
+				{
+					"title": "Massacre Maps",
+					"addons": [
+						"bridge_shootout",
+						"columbine_highschool",
+						"columbine_massacre",
+						"danang_massacre",
+						"gayparade_massacre",
+						"nightclub_genocide",
+						"nypd_shooting",
+						"otakon_massacre",
+						"school_shooting_v2",
+						"stripclub_slaughter",
+						"vtech_massacre"
+					]
+				},
+								{
+					"title": "HL2 Maps",
+					"addons": [
+						"get_your_free_tvs",
+						"school_shooting_escape_finished_"
+					]
+				}
+			]
+		},
+		{
+			"name": "blixer",
+			"display_name": "blixer",
+			"categories": [
+				{
+					"title": "Maps",
+					"addons": [
+						"bigasschool",
+						"fortnite_academy",
+						"furrypride",
+						"linwood",
+						"rainfurrest",
+						"Roblox_Highschool",
+						"sandyhook",
+						"subwaymassacre",
+						"Vista_Suite",
+						"vtech_remake",
+						"ysidro_mcdonalds",
+						"zoophile_protest"
+					]
+				}
+			]
+		},
+		{
+			"name": "Enderneer",
+			"display_name": "Enderneer",
+			"categories": [
+				{
+					"title": "Maps",
+					"addons": [
+						"stoneman_douglas_high_school"
+					]
+				}
+			]
+		},
+		{
+			"name": "Hoodirony360",
+			"display_name": "Hoodirony360",
+			"categories": [
+				{
+					"title": "Maps",
+					"addons": [
+						"West_Borough_High"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ice_Tea",
+			"display_name": "Ice Tea",
+			"categories": [
+				{
+					"title": "SWEPs",
+					"addons": [
+						"ice_tea"
+					]
+				}
+			]
+		},
+		{
+			"name": "me_eat_rock",
+			"display_name": "me eat rock",
+			"categories": [
+				{
+					"title": "Maps",
+					"addons": [
+						"masjidalnoor"
+					]
+				},
+				{
+					"title": "SWEPs",
+					"addons": [
+						"brentonsweps"
+					]
+				}
+			]
+		},
+		{
+			"name": "reckloose",
+			"display_name": "reckloose",
+			"categories": [
+				{
+					"title": "Maps",
+					"addons": [
+						"baerum",
+						"corrections_massacre",
+						"halle_attack",
+						"halle"
+					]
+				}
+			]
+		},
+		{
+			"name": "superposition",
+			"display_name": "superposition",
+			"categories": [
+				{
+					"title": "Maps",
+					"addons": [
+						"mosque_shootout"
+					]
+				}
+			]
+		},
+		{
+			"name": "unknown",
+			"display_name": "unknown",
+			"categories": [
+				{
+					"title": "Maps",
+					"addons": [
+						"white_lives_matter"
+					]
+				},
+				{
+					"title": "SWEPs",
+					"addons": [
+						"handcuffs"
+					]
+				},
+				{
+					"title": "Player Models",
+					"addons": [
+						"furfag_playermodels"
+					]
+				}
+			]
+		}
+	]
+}

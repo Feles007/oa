@@ -1,0 +1,39 @@
+#main {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+}
+#info, #creators {
+	flex: 1;
+}
+#links, #creators {
+	display: flex;
+	flex-direction: column;
+}
+#divider {
+	background-color: #808080;
+	width: 2px;
+}
+#links > div {
+	font-size: 20px;
+	margin: 3px;
+}
+#links > div:last-of-type {
+	margin-bottom: 10px;
+}
+#about > p, #installation > p {
+	color: #FFFFFF;
+	font-size: 18px;
+	margin: 7px 7px 12px 7px;
+	text-align: justify;
+}
+#creators > a {
+	font-size: 20px;
+	margin: 3px;
+}
+#creators > hr {
+	margin-bottom: 10px;
+}
+#creators > hr:nth-of-type(2) {
+	margin-top: 15px;
+}
