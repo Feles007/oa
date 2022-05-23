@@ -3,9 +3,9 @@
 # This clears all generated content, skipping the public/files/ directory
 
 clear_dir () {
-	if test -d $2
+	if test -d "$2"
 	then
-		find $2 -maxdepth $1 -type f -delete
+		find "$2" -maxdepth "$1" -type f -delete
 	fi
 }
 
