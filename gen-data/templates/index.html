@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>The Oppressed Archives</title>
-	<link rel="stylesheet" href="/static/base.css">
-	<link rel="stylesheet" href="/static/index.css">
-	<link rel="icon" href="/favicon.ico">
-	<meta name="referrer" content="no-referrer">
-</head>
-<body>
-<div id="header">
-	<br>
-	<h1>Oppressed Archives</h1>
-	<h2>Archives of everything the media is afraid of.</h2>
-	<br>
-	<hr>
-</div>
-<div id="main">
-	<div id="info">
-		<div id="links">
-			<h2>Links</h2>
+	<head>
+		<meta charset="UTF-8">
+		<title>The Oppressed Archives</title>
+		<link rel="stylesheet" href="/static/base.css">
+		<link rel="stylesheet" href="/static/index.css">
+		<link rel="icon" href="/favicon.ico">
+		<meta name="referrer" content="no-referrer">
+		<meta name="description" content="A GMod addon archiving project">
+	</head>
+	<body>
+		<div id="header">
+			<br>
+			<h1>Oppressed Archives</h1>
+			<h2>Archives of everything the media is afraid of.</h2>
+			<br>
 			<hr>
-			<div><a target="_blank" rel="noreferrer nofollow" href="https://discord.gg/GwqNshe">Discord 1</a></div>
-			<div><a target="_blank" rel="noreferrer nofollow" href="https://discord.gg/6qCfBMqc63">Discord 2</a></div>
-			<div><a target="_blank" rel="noreferrer nofollow" href="https://web.archive.org/web/20210130235806/https://sickdownloadarchives.weebly.com/oppressed-archives.html">Old Site</a></div>
 		</div>
-		<div id="installation">
-			<hr>
-			<h2>Addon Installation</h2>
-			<hr>
-			<p>Extract the zip file, and move the contained folder to <strong>&lt;steam library&gt;/GarrysMod/garrysmod/addons/</strong></p>
+		<div id="main">
+			<div id="info">
+				<div id="links">
+					<h2>Links</h2>
+					<hr>
+					<div><a target="_blank" rel="noreferrer nofollow" href="https://discord.gg/GwqNshe">Discord 1</a></div>
+					<div><a target="_blank" rel="noreferrer nofollow" href="https://discord.gg/6qCfBMqc63">Discord 2</a></div>
+					<div><a target="_blank" rel="noreferrer nofollow" href="https://web.archive.org/web/20210130235806/https://sickdownloadarchives.weebly.com/oppressed-archives.html">Old Site</a></div>
+				</div>
+				<div id="installation">
+					<hr>
+					<h2>Addon Installation</h2>
+					<hr>
+					<p>Extract the zip file, and move the contained folder to <strong>&lt;steam library&gt;/GarrysMod/garrysmod/addons/</strong></p>
+				</div>
+				<div id="about">
+					<hr>
+					<h2>About</h2>
+					<hr>
+					<p>The Oppressed Archives is a Garry's Mod addon archiving project. Originally developed on Weebly, it is now available as a hidden service on the Tor network.</p>
+					<p>Hosting and development is managed by Dev on the Discord server, though the actual content which is archived is determined by Orb.</p>
+				</div>
+			</div>
+			<div id="divider"></div>
+			<div id="creators">
+				<h2>Creators</h2>
+				<hr>
+
+				{% for creator in creators %}
+
+					{% if creator.name != "unknown" %}
+
+						<a href="/creator/{{ creator.name }}/">{{ creator.display_name }}</a>
+
+					{% endif %}
+
+				{% endfor %}
+
+				<hr>
+				<a href="/creator/unknown/">Unknown Creator</a>
+				<a href="/all/">All Files</a>
+			</div>
 		</div>
-		<div id="about">
-			<hr>
-			<h2>About</h2>
-			<hr>
-			<p>The Oppressed Archives is a Garry's Mod addon archiving project. Originally developed on Weebly, it is now available as a hidden service on the Tor network.</p>
-			<p>Hosting and development is managed by Dev on the Discord server, though the actual content which is archived is determined by Orb.</p>
-		</div>
-	</div>
-	<div id="divider"></div>
-	<div id="creators">
-		<h2>Creators</h2>
-		<hr>
-
-		{% for creator in creators %}
-
-			{% if creator.name != "unknown" %}
-
-				<a href="/creator/{{ creator.name }}/">{{ creator.display_name }}</a>
-
-			{% endif %}
-
-		{% endfor %}
-
-		<hr>
-		<a href="/creator/unknown/">Unknown Creator</a>
-		<a href="/all/">All Files</a>
-	</div>
-</div>
-</body>
+	</body>
 </html>
