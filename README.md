@@ -45,4 +45,14 @@ gen-data
 
 The directory to point your web server to. Contains the final product.
 The generator doesn't deal with the actual addon files, so those must be placed manually.
-(Though the directories can be created from the data.json file by running the generator with the *--dir* argument.)
+(Though the directories can be created from the data.json file by running the generator with the --dir argument.)
+
+## Setup
+
+1. Install rustup and Nginx
+2. Clone this repo into /srv/www/
+3. *cd oa/generator/*
+4. *cargo run --release*
+5. *cd ../*
+6. Copy or link oa.conf into /etc/nginx/sites-enabled/
+7. Start, restart, or reload Nginx
