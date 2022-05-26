@@ -22,9 +22,18 @@ pub fn gen_images() -> Result<(), Box<dyn Error>> {
 
 	input_files.par_iter()
 		.for_each(|input_file| {
+
+			let creator_dir = Path::new(input_file);
+			let creator_dir = creator_dir.parent().unwrap().file_name().unwrap().to_str().unwrap();
+
+			let output_file = Path::new(input_file);
+			let output_file = output_file.file_stem().unwrap().to_str().unwrap();
+
+			let input_file = Path::new(input_file).file_name().unwrap().to_str().unwrap();
+
 			compress_and_save(
-				&format!("{}/thumbnails/{}", INPUT_DIR, input_file),
-				&format!("{}/thumbnails/{}", OUTPUT_DIR, input_file),
+				&format!("{}/thumbnails/{}/{}", INPUT_DIR, creator_dir, input_file),
+				&format!("{}/thumbnails/{}/{}.jpg", OUTPUT_DIR, creator_dir, output_file),
 			).unwrap();
 		});
 
@@ -58,7 +67,7 @@ fn get_input_files() -> Result<Vec<String>, Box<dyn Error>> {
 fn compress_and_save(input_path: &String, output_path: &String) -> Result<(), Box<dyn Error>> {
 
 	// Get data form input image
-	let img = ImageReader::open(input_path).unwrap().decode()?;
+	let img = ImageReader::open(input_path)?.decode()?;
 	let img = DynamicImage::from(img.into_rgb8());
 	let img = img.resize_exact(OUTPUT_WIDTH as u32, OUTPUT_HEIGHT as u32, FilterType::Lanczos3);
 	let pixels = img.as_bytes();
