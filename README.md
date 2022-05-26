@@ -14,6 +14,8 @@ This repo isn't really meant for others to use, it's mostly to keep track of dev
 
 A rust program which generates modified HTML, CSS, and images. Run like any other Cargo project.
 
+On my machine, running it in release mode provides a ~30x increase in speed.
+
 #### /gen-data/
 
 Where the files needed by the generator are stored. This folder should be laid out as follows:
