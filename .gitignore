@@ -2,3 +2,5 @@
 generator/target
 generator/Cargo.lock
 public/*
+log/*.log
+log/*.tar.bz2
