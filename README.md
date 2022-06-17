@@ -2,7 +2,7 @@
 
 A GMod addon archiving project.
 
-Visit at: *ryff3kenu5u7qijckmatsids5ur4h6g335qg3bqq5s55z2db3buhkzad (dot) onion*
+Visit at: *ryff3kenu5u7qijckmatsids5ur4h6g335qg3bqq5s55z2db3buhkzad.onion*
 
 The site is static, so this is only the source for tools used to generate it.
 
