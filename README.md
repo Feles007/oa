@@ -49,7 +49,7 @@ The generator doesn't deal with the actual addon files, so those must be placed 
 
 ## Setup
 
-1. Install rustup and Nginx
+1. Install rustup and nginx-extras
 2. Clone this repo into /srv/www/
 3. *cd oa/generator/*
 4. *cargo run --release*
