@@ -143,6 +143,30 @@
 			]
 		},
 		{
+			"name": "Soldier96",
+			"display_name": "Soldier96",
+			"categories": [
+				{
+					"title": "Maps",
+					"addons": [
+						"Right Lads map"
+					]
+				},
+				{
+					"title": "Player Models",
+					"addons": [
+						"Right Lads Player Model"
+					]
+				},
+				{
+					"title": "SWEPs",
+					"addons": [
+						"Right lads weapon pack"
+					]
+				}
+			]
+		},
+		{
 			"name": "superposition",
 			"display_name": "superposition",
 			"categories": [
