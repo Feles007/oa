@@ -173,7 +173,8 @@
 				{
 					"title": "Maps",
 					"addons": [
-						"mosque_shootout"
+						"mosque_shootout",
+						"gm_sandyhook_fix"
 					]
 				}
 			]
